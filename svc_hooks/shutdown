@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#databank-bin-scripts/svc_hooks/shutdown
+echo shutdown not yet implemented

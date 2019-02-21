@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#medusa-bin-scripts/svc_hooks/boot
+echo boot not yet implemented
