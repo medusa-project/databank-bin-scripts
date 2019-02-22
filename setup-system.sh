@@ -13,11 +13,13 @@ YUMOPTS="--assumeyes"
 #assumes git is already installed, and that is how these files got onto the server
 
 #General
-YUM_PACKAGES="emacs-nox gcc nodejs monit"
+YUM_PACKAGES="emacs-nox gcc nodejs"
 #ruby
 YUM_PACKAGES="$YUM_PACKAGES bzip2 openssl-devel readline-devel ruby-devel"
+#ruby-build
+YUM_PACKAGES="$YUM_PACKAGES libyaml-devel libffi-devel zlib-devel gdbm-devel ncurses-devel"
 #needed for rails app
-YUM_PACKAGES="$YUM_PACKAGES libcurl-devel postgresql-devel gcc-c++ file-devel libyaml-devel zlib-devel libffi-devel sqlite-devel"
+YUM_PACKAGES="$YUM_PACKAGES libcurl-devel postgresql-devel gcc-c++ file-devel sqlite-devel"
 yum $YUMOPTS install $YUM_PACKAGES
 
 #I didn't get the necessary g++ until I installed this

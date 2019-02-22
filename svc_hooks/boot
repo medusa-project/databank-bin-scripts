@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
-#medusa-bin-scripts/svc_hooks/boot
-echo boot not yet implemented
+#databank-bin-scripts/svc_hooks/boot
+
+###
+### boot - service hook for booting up databank; called by
+###        /etc/init.d/databank
+###
+
+# Load environment variables
+. $HOME/.bashrc
+
+source $HOME/bin/env.sh
+
+# Start Rails
+$HOME/bin/start-rails
