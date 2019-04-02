@@ -8,4 +8,4 @@ if [ -d $HOME/.rbenv ]; then
   eval "$(rbenv init -)"
   rbenv local 2.5.1
 fi
-bundle exec rake medusa:get_medusa_ingest_responses >> /dev/null
+bundle exec rake medusa:get_medusa_ingest_responses > /dev/null 2>&1
