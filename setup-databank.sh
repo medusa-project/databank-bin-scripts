@@ -57,9 +57,9 @@ echo "Making databank ruby the default rbenv ruby"
 rbenv global $DATABANK_RUBY_VERSION
 rbenv shell $DATABANK_RUBY_VERSION
 
-#Cron - install the cron jobs per the file in the CRONTAB_FILENAME directory
-crontab $CRONTAB_FILENAME
-echo "Installed crontab $CRONTAB_FILENAME"
+#Cron - install the cron jobs per the file "crontab"
+crontab crontab
+echo "Installed crontab"
 
 echo "Linking svc_hooks directory"
 ln -nsf $HOME/bin/svc_hooks $HOME/svc_hooks

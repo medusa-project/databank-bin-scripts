@@ -1,0 +1,5 @@
+*/5 * * * * /home/databank/bin/get_medusa_messages.sh
+9 */1 * * * /home/databank/bin/handle_ripe_tasks.sh
+0 1 * * * /home/databank/bin/update_pubstates.sh
+0 2 * * * /home/databank/bin/notify.sh
+0 3 * * * /home/databank/bin/scrub_download_records.sh
