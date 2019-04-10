@@ -4,7 +4,7 @@
 source $HOME/bin/env.sh
 
 #Clear Rails cache
-( cd $DATABANK_HOME ; bundle exec rake medusa:rails_cache:clear )
+( cd $DATABANK_HOME ; bundle exec rake databank:rails_cache:clear )
 
 # Start Passenger
 ( cd $DATABANK_HOME ; bundle install ; bundle exec passenger start -e $RAILS_ENV -d --max-pool-size 20 )
