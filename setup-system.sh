@@ -29,7 +29,7 @@ yum $YUMOPTS groupinstall 'Development Tools'
 npm install -g yarn
 
 # copy ./etc/init.d/databank to /etc/init.d/databank
-cp -f ./etc/init.d/databank to /etc/init.d/databank
+yes | cp etc/init.d/databank /etc/init.d/
 chown root /etc/init.d/databank
 chgrp root /etc/init.d/databank
 chmod 755 /etc/init.d/databank
