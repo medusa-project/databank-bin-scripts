@@ -27,3 +27,9 @@ yum $YUMOPTS groupinstall 'Development Tools'
 
 #install yarn globally
 npm install -g yarn
+
+# copy ./etc/init.d/databank to /etc/init.d/databank
+cp -f ./etc/init.d/databank to /etc/init.d/databank
+chown root /etc/init.d/databank
+chgrp root /etc/init.d/databank
+chmod 755 /etc/init.d/databank
