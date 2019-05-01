@@ -6,6 +6,5 @@ cd $HOME/current
 if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
-  rbenv local 2.5.1
 fi
 bundle exec rake databank_tasks:handle_ripe_tasks > /dev/null 2>&1
