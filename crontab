@@ -3,3 +3,4 @@
 0 1 * * * /home/databank/bin/update_pubstates.sh
 0 2 * * * /home/databank/bin/notify.sh
 0 3 * * * /home/databank/bin/scrub_download_records.sh
+0 4 * * * /home/databank/bin/trim_sessions.sh
