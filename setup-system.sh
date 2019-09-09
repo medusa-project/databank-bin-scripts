@@ -28,6 +28,9 @@ yum $YUMOPTS groupinstall 'Development Tools'
 #install yarn globally
 npm install -g yarn
 
+#install rclone
+curl https://rclone.org/install.sh | sudo bash
+
 # copy ./etc/init.d/databank to /etc/init.d/databank
 yes | cp etc/init.d/databank /etc/init.d/
 chown root /etc/init.d/databank
