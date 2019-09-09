@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source $HOME/bin/env.sh
+
+mkdir -p $RCLONE_DATABANK_MOUNTPOINT
+mkdir -p $RCLONE_DATABANK_PIDDIR
+
+fusermount -uz $RCLONE_DATABANK_MOUNTPOINT || echo "$RCLONE_DATABANK_MOUNTPOINT may not be mounted currently"
+rclone mount $RCLONE_REMOTE:$RCLONE_DATABANK_BUCKET $RCLONE_DATABANK_MOUNTPOINT &
+echo $! > $RCLONE_DATABANK_PIDDIR
