@@ -9,7 +9,7 @@
 # Load environment variables
 . $HOME/.bashrc
 
-source $HOME/bin/env.sh
+source $HOME/bin/scripts/env.sh
 
 # Start Rails
-$HOME/bin/start-rails
+$HOME/bin/scripts/start-rails
