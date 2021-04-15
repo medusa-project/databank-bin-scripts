@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-# update_pubstate.sh
+#get_medusa_messages.sh
 HOME=/home/databank
-source $HOME/shared/scripts/env.sh
+source $HOME/bin/scripts/env.sh
 cd $HOME/current
 if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
-bundle exec rails pub:update_state >> /dev/null
-bundle exec rails sunspot:reindex >> /dev/null
+bundle exec rails metrics:generate_docs > /dev/null 2>&1

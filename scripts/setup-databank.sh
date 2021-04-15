@@ -3,7 +3,7 @@
 #This is to set up the things the local user can install, like
 #source package, rbenv, the fixity/fits servers, etc.
 [[ -d $HOME/.bashrc ]] && source $HOME/.bashrc
-source $HOME/bin/env.sh
+source $HOME/bin/scripts/env.sh
 
 function die {
     echo $1

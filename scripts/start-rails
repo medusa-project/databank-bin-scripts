@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #databank-bin-scripts/start-rails
 
-source $HOME/bin/env.sh
+source $HOME/bin/scripts/env.sh
 
 # Clear Rails cache
-( cd $DATABANK_HOME ; RAILS_ENV=$RAILS_ENV bundle exec rake databank:rails_cache:clear )
+( cd $DATABANK_HOME ; RAILS_ENV=$RAILS_ENV bundle exec rails databank:rails_cache:clear )
 
 # Start Delayed Job
 ( cd $DATABANK_HOME ; RAILS_ENV=$RAILS_ENV bin/delayed_job -n 10 start)

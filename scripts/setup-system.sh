@@ -13,7 +13,7 @@ YUMOPTS="--assumeyes"
 #assumes git is already installed, and that is how these files got onto the server
 
 #General
-YUM_PACKAGES="emacs-nox gcc nodejs"
+YUM_PACKAGES="emacs-nox gcc nodejs file-devel file-libs"
 #ruby
 YUM_PACKAGES="$YUM_PACKAGES bzip2 openssl-devel readline-devel ruby-devel"
 #ruby-build
@@ -27,9 +27,6 @@ yum $YUMOPTS groupinstall 'Development Tools'
 
 #install yarn globally
 npm install -g yarn
-
-#install rclone
-curl https://rclone.org/install.sh | sudo bash
 
 # copy ./etc/init.d/databank to /etc/init.d/databank
 yes | cp etc/init.d/databank /etc/init.d/
