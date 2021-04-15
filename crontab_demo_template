@@ -1,0 +1,8 @@
+*/5 * * * * /home/databank/bin/get_medusa_messages.sh
+0 9 * * * /home/databank/bin/update_pubstates.sh
+0 10 * * * /home/databank/bin/notify.sh
+0 11 * * * /home/databank/bin/scrub_download_records.sh
+0 12 * * * /home/databank/bin/trim_sessions.sh
+0 8 * * * /home/databank/bin/export4experts.sh
+0 7 * * * /home/databank/bin/globus.sh
+0 13 * * * /home/databank/bin/refresh_metrics.sh
