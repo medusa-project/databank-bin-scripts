@@ -7,4 +7,4 @@ if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
-bundle exec rails medusa:get_extractor_response > /dev/null 2>&1
+bundle exec rails extractor_tasks:get_extractor_response > /dev/null 2>&1
