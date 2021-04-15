@@ -1,7 +1,0 @@
-* * * * * /home/databank/bin/scripts/get_extractor_messages.sh
-*/5 * * * * /home/databank/bin/scripts/get_medusa_messages.sh
-0 1 * * * /home/databank/bin/scripts/update_pubstates.sh
-0 2 * * * /home/databank/bin/scripts/notify.sh
-0 3 * * * /home/databank/bin/scripts/scrub_download_records.sh
-0 4 * * * /home/databank/bin/scripts/trim_sessions.sh
-0 9 * * * /home/databank/bin/scripts/export4experts.sh

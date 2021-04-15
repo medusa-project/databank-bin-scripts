@@ -6,9 +6,4 @@ Copy /etc/init.d/databank from this repository to /etc/init.d/databank on server
 Everything that you might want to configure should be set in env.sh, which
 the other scripts source. If something isn't, it should be.
 
-The scripts to be called by cron in this repo are:
-<br>- get_medusa_messages.sh
-<br>- handle_ripe_tasks.sh
-<br>- notify.sh
-<br>- scrub_download_records.sh
-<br>- update_pubstates.sh
+See the crontab_demo_template and crontab_prod_template for schedules and scripts. Copy the appropriate text into the crontab on the respective servers.
