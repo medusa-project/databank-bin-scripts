@@ -1,8 +1,9 @@
-*/5 * * * * /home/databank/shared/scripts/get_medusa_messages.sh
-9 */1 * * * /home/databank/shared/scripts/handle_ripe_tasks.sh
-0 1 * * * /home/databank/shared/scripts/update_pubstates.sh
-0 2 * * * /home/databank/shared/scripts/notify.sh
-0 3 * * * /home/databank/shared/scripts/scrub_download_records.sh
-0 4 * * * /home/databank/shared/scripts/trim_sessions.sh
-0 9 * * * /home/databank/shared/scripts/export4experts.sh
-0 23 * * * /home/databank/shared/sripts/refresh_metrics.sh
+* * * * * /home/databank/bin/scripts/get_extractor_message.sh
+*/5 * * * * /home/databank/bin/scripts/get_medusa_messages.sh
+0 1 * * * /home/databank/bin/scripts/globus.sh
+0 2 * * * /home/databank/bin/scripts/update_pubstates.sh
+0 3 * * * /home/databank/bin/scripts/notify.sh
+0 4 * * * /home/databank/bin/scripts/scrub_download_records.sh
+0 5 * * * /home/databank/bin/scripts/trim_sessions.sh
+0 6 * * * /home/databank/bin/scripts/export4experts.sh
+0 23 * * * /home/databank/bin/scripts/refresh_metrics.sh
