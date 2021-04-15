@@ -8,7 +8,7 @@
 # Load environment variables
 . $HOME/.bashrc
 
-source $HOME/bin/env.sh
+source $HOME/bin/scripts/env.sh
 
 # Stop Rails
-$HOME/bin/stop-rails
+$HOME/bin/scripts/stop-rails
