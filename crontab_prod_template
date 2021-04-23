@@ -1,5 +1,6 @@
+* * * * * /home/databank/bin/scripts/send_extractor_batch.sh
 * * * * * /home/databank/bin/scripts/get_extractor_message.sh
-*/5 * * * * /home/databank/bin/scripts/get_medusa_messages.sh
+* * * * * /home/databank/bin/scripts/get_medusa_messages.sh
 0 1 * * * /home/databank/bin/scripts/globus.sh
 0 2 * * * /home/databank/bin/scripts/update_pubstates.sh
 0 3 * * * /home/databank/bin/scripts/notify.sh
