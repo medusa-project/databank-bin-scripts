@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # update_pubstate.sh
 HOME=/home/databank
-source $HOME/shared/scripts/env.sh
+source $HOME/bin/env.sh
 cd $HOME/current
 if [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
